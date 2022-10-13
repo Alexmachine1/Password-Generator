@@ -5,17 +5,17 @@ let firstDisplay = document.querySelector(".displayOne")
 let secondDisplay = document.querySelector(".displayTwo")
 // let passwordLength = document.getElementById("inputed").value
 
-let passwordLength = 4
+let passwordLength = 8
 
-function generatePassword() {
-    let pass="";    
+function randomPassword() {
+    let password=""   
     for(let i = 0; i < passwordLength; i++){
-        pass += characters[ Math.floor(Math.random() * characters.length) ]
+        password += characters[ Math.floor(Math.random() * characters.length) ]
     }    
-    return pass;
+    return password
 }
-function passwords() {
-    firstDisplay.textContent = generatePassword()
-    secondDisplay.textContent = generatePassword()
+function generatePassword() {
+    firstDisplay.textContent = randomPassword()
+    secondDisplay.textContent = randomPassword()
 
 }
