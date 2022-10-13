@@ -1,0 +1,45 @@
+body {
+    background-color:#041630;
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    background-color: #1E2938; 
+    color: white;
+    width: 60%;
+    margin: auto;
+    padding: 30px 0 20px 30px;
+    border-radius: 10px;
+
+}
+
+.secondDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+button{
+    background-color: #10B981;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.border{
+    /* border-style: solid; */
+    border: 1px rgb(75, 75, 75) solid;
+    border-bottom: none;
+    margin: auto;
+    width: 80%
+
+}
+.displayOne, .displayTwo{
+    background-color: #273549;
+    padding: 10px 80px;
+    border-radius: 7px;
+}
