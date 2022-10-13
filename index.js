@@ -3,19 +3,20 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let firstDisplay = document.querySelector(".displayOne")
 let secondDisplay = document.querySelector(".displayTwo")
-// let passwordLength = document.getElementById("inputed").value
+let generatePassword = document.getElementById("generate-password")
+let inputEd = document.getElementById("input-ed")
 
-let passwordLength = 8
+// const passwordLength = inputEd.value
 
 function randomPassword() {
     let password=""   
-    for(let i = 0; i < passwordLength; i++){
+    for(let i = 0; i < inputEd.value; i++){
         password += characters[ Math.floor(Math.random() * characters.length) ]
     }    
     return password
 }
-function generatePassword() {
+generatePassword.addEventListener("click", function (){
     firstDisplay.textContent = randomPassword()
     secondDisplay.textContent = randomPassword()
 
-}
+})
